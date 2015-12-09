@@ -12,6 +12,11 @@ class DmozItem(scrapy.Item):
     link = scrapy.Field()
     desc = scrapy.Field()
 
+class BdItem(scrapy.Item):
+    css = scrapy.Field()
+    title = scrapy.Field()
+    link = scrapy.Field()
+    desc = scrapy.Field()
 
 class TutorialItem(scrapy.Item):
     # define the fields for your item here like:
