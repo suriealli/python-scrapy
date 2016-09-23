@@ -27,5 +27,6 @@ def spider(url):
 # 下载图片
 def download_Image(url, save_path):
 #     urllib.request.urlretrieve(url, save_path)
-     urllib.urlretrieve(url, save_path)     
-spider("http://tieba.baidu.com/p/2166231880")
+    urllib.urlretrieve(url, save_path)     
+if __name__ == '__main__':
+    spider("http://tieba.baidu.com/p/2166231880")

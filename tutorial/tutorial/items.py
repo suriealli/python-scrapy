@@ -18,7 +18,19 @@ class BdItem(scrapy.Item):
     link = scrapy.Field()
     desc = scrapy.Field()
 
+class MeizituItem(scrapy.Item):
+    url = scrapy.Field()
+    image = scrapy.Field()
+    image_url = scrapy.Field()
+
+
 class TutorialItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class Product(scrapy.Item):
+    name = scrapy.Field()
+    price = scrapy.Field()
+    stock = scrapy.Field()
+    last_updated = scrapy.Field(serializer=str)
